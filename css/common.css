@@ -1,0 +1,54 @@
+/* 공통스타일 */
+/* 프로젝트 시작부터 만들지는 않아요! */
+.wrap {
+  position: relative;
+  display: block;
+  /* 적지 않아도 기본이 block */
+  width: 100%;
+}
+.space-between {
+  justify-content: space-between !important;
+}
+/* !important는 무조건 적용되도록 만드는 것 */
+
+.align-items-center {
+  align-items: center !important;
+}
+.inner {
+  position: relative;
+  display: flex;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  /* 화면 가운데에 오도록 */
+}
+.bt-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.bt {
+  display: block;
+  border: 1px solid #000;
+  color: #000;
+  padding: 11px 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fff;
+}
+.bt:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 기본은 데스크탑 PC 레이아웃 (위에 것들이 해당) */
+/* 태블릿 PC 레이아웃 (테이블 버전이 모바일 까지 커버) */
+@media screen and (max-width: 1170px) {
+  .inner {
+    padding: 0 15px;
+    /* 양쪽에 15px만큼 적용 */
+  }
+}
+/* 모바일 레이아웃 */

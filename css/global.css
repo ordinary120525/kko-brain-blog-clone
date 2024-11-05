@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: #000;
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: inter, "Noto Sans KR", sans-serif;
+  /* 쌍따옴표를 사용하는 이유는 뛰어쓰기 때문이다. */
+  letter-spacing: auto;
+  word-break: keep-all;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999999999999;
+  display: none;
+}
+.modal.active {
+  display: block;
+}
+.modal-inner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  display: flex;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.modal .bt-wrap {
+  margin: 0;
+}
